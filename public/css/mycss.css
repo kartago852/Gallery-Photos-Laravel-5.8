@@ -1,0 +1,17 @@
+.center{
+    position: relative;
+    left: 20%;
+}
+
+.circle{
+    background-color: transparent;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.circle:hover{
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+    background-position: left bottom;
+}
