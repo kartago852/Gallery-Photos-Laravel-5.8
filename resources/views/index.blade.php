@@ -65,10 +65,6 @@
 								<li>
 									<a href="contact">Contact</a>
 								</li>
-
-								<li>
-									<a href="login1">Login</a>
-								</li>
 							</ul>
 						</nav>
 					</div>
@@ -76,9 +72,39 @@
 					<!-- Social -->
 					<div class="social flex-w flex-l-m p-r-20 circle">
 						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
-
-						
 					</div>
+
+					<div class="wrap_menu p-l-45 p-l-0-xl">
+							<nav class="menu">
+								<ul class="main_menu">
+									<!-- Authentication Links -->
+									@guest
+									<li class="nav-item">
+										<a class="nav-link" href="login1">Iniciar sesion</a>
+									</li>
+									@else
+									<li class="nav-item dropdown">
+										<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+											{{ $user->name }} <span class="caret"></span>
+										</a>
+		
+										<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+											<a class="dropdown-item" href="{{ route('logout') }}"
+											   onclick="event.preventDefault();
+															 document.getElementById('logout-form').submit();">
+												{{ __('Logout') }}
+											</a>
+		
+											<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+												@csrf
+											</form>
+										</div>
+									</li>
+								@endguest
+								</ul>
+							</nav>		
+					</div>
+
 					<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
 				</div>
 			</div>
