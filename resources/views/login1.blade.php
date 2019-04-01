@@ -30,7 +30,12 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/mycss.css">
+	<link rel="stylesheet" type="text/css" href="login/css/util.css">
+	<link rel="stylesheet" type="text/css" href="login/css/main.css">
 <!--===============================================================================================-->
+
+<!--========================================Login Propertis===========================================-->	
+
 </head>
 <body class="animsition">
 	<!-- Header -->
@@ -41,7 +46,7 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html">
+						<a href="index">
 							<img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
 						</a>
 					</div>
@@ -64,6 +69,10 @@
 								
 								<li>
 									<a href="contact">Contact</a>
+                                </li>
+
+                                <li>
+									<a href="login">Login</a>
 								</li>
 							</ul>
 						</nav>
@@ -110,64 +119,73 @@
 		</ul>
 	</aside>
 
-	<!-- Slide1 -->
-	<section class="section-slide">
-		<div class="wrap-slick1">
-			<div class="slick1">
-				<div class="item-slick1 item1-slick1" style="background-image: url(images/homestead-0.jpg);">
-					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
-							Welcome to
-						</span>
-
-						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
-							Disfraces Coqui
-						</h2>
-
-						<div class="wrap-btn-slide1 animated visible-false" data-appear="zoomIn">
-							<!-- Button1 -->
-							<a href="gallery" class="btn1 flex-c-m size1 txt3 trans-0-4">
-								Ver Disfraces
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="wrap-slick1-dots"></div>
-		</div>
-	</section>
-
-	<!-- Welcome -->
+	<!-- Login -->
 	<section class="section-welcome bg1-pattern p-t-120 p-b-105">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 p-t-45 p-b-30">
 					<div class="wrap-text-welcome t-center">
-						<span class="tit2 t-center">
-							Disfraces Coqui
-						</span>
-						<h3 class="tit3 t-center m-b-35 m-t-5">
-							Bienvenidos
-						</h3>
-						<p class="t-center m-b-22 size3 m-l-r-auto">
-							Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
-						</p>
-
-						<a href="about" class="txt4">
-							Mas informacion
-							<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-						</a>
-					</div>
-				</div>
-
-				<div class="col-md-6 p-b-30">
-					<div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-						<img src="images/our-story-01.jpg" alt="IMG-OUR">
+						<div class="limiter">
+							<div class="container-login50 center">
+								<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+									<form class="login100-form validate-form flex-sb flex-w">
+										<span class="login100-form-title p-b-32 t-center">
+										Login
+										</span>
+					
+										<span class="txt1 p-b-11">
+											Usuario
+										</span>
+										<div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
+											<input class="input100" type="text" name="username" >
+											<span class="focus-input100"></span>
+										</div>
+										
+										<span class="txt1 p-b-11">
+											Contraseña
+										</span>
+										<div class="wrap-input100 validate-input m-b-12" data-validate = "Password is required">
+											<span class="btn-show-pass">
+												<i class="fa fa-eye"></i>
+											</span>
+											<input class="input100" type="password" name="pass" >
+											<span class="focus-input100"></span>
+										</div>
+										
+										<div class="flex-sb-m w-full p-b-48">
+											<div class="contact100-form-checkbox">
+												<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+												<label class="label-checkbox100" for="ckb1">
+													Recordar Contraseña
+												</label>
+											</div>
+					
+											<div>
+												<a href="#" class="txt3">
+													¿Se olvido la Contraseña ?
+												</a>
+											</div>
+										</div>
+					
+										<div class="container-login100-form-btn">
+											<button class="login100-form-btn">
+												Ingresar
+											</button>
+										</div>
+					
+									</form>
+								</div>
+							</div>
+						</div>
+						
+					
+						<div id="dropDownSelect1"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+    
 	<!-- Footer -->
 	<footer class="bg1">
 		<div class="container p-t-40 p-b-70">
@@ -260,7 +278,9 @@
 <!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
 <!--===============================================================================================-->
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+
+    
 
 </body>
 </html>

@@ -29,6 +29,6 @@ class FormServiceProvider extends ServiceProvider
         Form::component('textarea','components.form.textarea',['name','value' => null,'attributes' => []]);
         Form::component('submit','components.form.submit',['value' => 'Submit','attributes' => []]);
         Form::component('hidden','components.form.hidden',['name','value' => null,'attributes' => []]);
-        Form::component('file','components.form.file',['name','value' => null,'attributes' => []]);
+        Form::component('file','components.form.file',['name','attributes' => []]);
     }
 }

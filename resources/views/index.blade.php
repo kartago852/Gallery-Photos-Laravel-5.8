@@ -41,7 +41,7 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html">
+						<a href="index">
 							<img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
 						</a>
 					</div>
@@ -64,6 +64,10 @@
 								
 								<li>
 									<a href="contact">Contact</a>
+								</li>
+
+								<li>
+									<a href="login1">Login</a>
 								</li>
 							</ul>
 						</nav>
