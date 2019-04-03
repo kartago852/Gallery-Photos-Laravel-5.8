@@ -73,14 +73,15 @@
 					<div class="social flex-w flex-l-m p-r-20 circle">
 						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
 					</div>
-
+					
+					<!--- Sesions --->
 					<div class="wrap_menu p-l-45 p-l-0-xl">
 							<nav class="menu">
 								<ul class="main_menu">
 									<!-- Authentication Links -->
 									@guest
 									<li class="nav-item">
-										<a class="nav-link" href="login1">Iniciar sesion</a>
+										<a class="nav-link" href="login">Iniciar sesion</a>
 									</li>
 									@else
 									<li class="nav-item dropdown">
@@ -135,7 +136,7 @@
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="login" class="txt19">Login</a>
+				<a href="login1" class="txt19">Login</a>
 			</li>
 		</ul>
 	</aside>
